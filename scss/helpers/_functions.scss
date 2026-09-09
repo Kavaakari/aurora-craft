@@ -1,0 +1,46 @@
+@use 'sass:math';
+
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) * 1rem;
+  } @else {
+    @error 'The rem() function accepts only number without units!';
+  }
+}
+
+@function em($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) * 1em;
+  } @else {
+    @error 'The em() function accepts only number without units!';
+  }
+}
+
+@function fluid($min: 16, $max: 48, $min-width: 375, $max-width: 1440) {
+  @if not (
+    math.is-unitless($min) and
+    math.is-unitless($max) and
+    math.is-unitless($min-width) and
+    math.is-unitless($max-width)
+  ) {
+    @error 'The fluid() function accepts only numbers without units!';
+  }
+
+  $slope: math.div(($max - $min), ($max-width - $min-width));
+  $y-intersection: -$min-width * $slope + $min;
+
+  $min-rem: math.div($min, 16) * 1rem;
+  $max-rem: math.div($max, 16) * 1rem;
+  $intersection-rem: math.div($y-intersection, 16) * 1rem;
+
+  @if $min > $max {
+    $abs-slope-vw: math.abs($slope * 100) * 1vw;
+    $preferred-value: calc(#{$intersection-rem} - #{$abs-slope-vw});
+    @return clamp(#{$max-rem}, #{$preferred-value}, #{$min-rem});
+  } 
+
+  $slope-vw: ($slope * 100) * 1vw;
+  $preferred-value: calc(#{$intersection-rem} + #{$slope-vw});
+
+  @return clamp(#{$min-rem}, #{$preferred-value}, #{$max-rem});
+}

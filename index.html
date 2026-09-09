@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="images/favicon/favicon.webp" type="image/webp">
+  <title>AuroraCraft</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a
+        class="header__logo"
+        href="/"
+        aria-label="AuroraCraft Ana Sayfa"
+      >
+        <img
+          class="header__logo-img"
+          src="images/logo/logo.webp"
+          alt="Logo"
+          width="77"
+          height="30"
+        />
+      </a>
+      <span class="header__tagline">
+        Kuzey Işıkları Altında Balıkçılık
+      </span>
+
+      <nav class="header__menu menu" id="mobile-menu" aria-label="Ana Menü">
+        <div class="menu__header">
+          <button
+            class="menu__close"
+            type="button"
+            aria-label="Menüyü kapat"
+          ></button>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a
+              class="menu__link" 
+              href="#hero"
+            >
+            Ana Sayfa
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link" 
+              href="#ice-fishing"
+            >
+            Buzda Balıkçılık
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link" 
+              href="#aurora-fishing"
+            >
+            Aurora Altında Balıkçılık
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link" 
+              href="#nordic-traditions"
+            >
+            Nordik Gelenekler
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link" 
+              href="#techniques"
+            >
+            Arktik Teknikler
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link" 
+              href="#faq"
+            >
+            SSS
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="header__buttons">
+          <button
+            class="header__btn header__btn--primary"
+            type="button"
+            data-modal="modal-register"
+          >
+            Kayıt Ol
+          </button>
+          <button
+            class="header__btn header__btn--outline"
+            type="button"
+            data-modal="modal-login"
+          >
+            Giriş Yap
+          </button>
+        </div>
+
+        <button
+          class="header__burger burger"
+          type="button"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="hero__container container">
+        <div class="hero__card">
+          <div class="hero__media">
+            <img
+              class="hero__image"
+              src="images/hero/hero-1.webp"
+              alt=""
+              width="602"
+              height="816"
+            />
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__content-title">
+              Gökyüzü ve Buzun Buluştuğu Yer
+            </h1>
+            <p class="hero__content-text">
+              Uzak kuzey bölgelerinde balıkçılık, sular donduğunda veya güneş haftalar boyunca kaybolduğunda sona ermez. İskandinavya, arktik rusya ve Kuzey Amerika'nın kuzey bölgelerinde topluluklar, çoğu zaman değişen kuzey ışıkları altında gerçekleştirilen buzda balıkçılık ve gece balıkçılığı geleneklerini geliştirmiştir. AuroraCraft, kuzey balıkçılık geleneklerinin tarihini ve kültürünü inceler; insanların yıl boyunca balıkçılığı sürdürebilmek için aşırı soğuk, karanlık ve donmuş sulara nasıl uyum sağladığını keşfeder.
+            </p>
+          </div>
+        </div>
+        <div class="hero__banner" id="ice-fishing">
+          <h2 class="hero__banner-title">
+            Derinliklerde Saklı Olanı Keşfetmek
+          </h2>
+          <p class="hero__banner-text">
+            Buzda balıkçılık, göllerin ve nehirlerin üzerinde yürünebilecek kadar donduğu kuzey bölgelerinde yüzyıllardır uygulanmaktadır. İlk yöntemler, keski veya buz burguları kullanılarak açılan el yapımı deliklere ve ardından suyun altına indirilen basit olta sistemlerine dayanıyordu. Zamanla teknikler bölgelere göre çeşitlendi; bazı kültürler buz deliklerinden zıpkınla balık avlama yöntemleri geliştirirken, bazıları soğuk sularda aktif olan belirli balık türlerine uygun jig yöntemlerini geliştirdi.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="traditions section-padding-y" id="traditions">
+      <div class="traditions__container container">
+        <div class="traditions__list">
+          <article class="traditions__card" id="aurora-fishing">
+            <div class="traditions__content">
+              <h2 class="traditions__content-title">
+                Gökyüzünün Geleneğin Bir Parçası Haline Geldiği Anlar
+              </h2>
+              <p class="traditions__content-text">
+                Kuzey ışıklarının görülebildiği bölgelerde, kış balıkçılığı gezileri genellikle hem balıkların daha sakin olduğu dönemlerden yararlanmak hem de etkileyici kuzey ışıkları manzarasının tadını çıkarmak için gece saatlerine kadar devam ederdi. Bazı kuzey balıkçılık toplulukları, aurora görüntülerini ruhlar veya atalarla ilgili folklorik inanışlarla ilişkilendirerek gece balıkçılığına pratik amacının ötesinde kültürel ve manevi bir anlam kazandırmıştır.
+              </p>
+            </div>
+            <div class="traditions__media">
+              <img
+                class="traditions__image"
+                src="images/traditions/card-1.webp"
+                alt="Kuzey ışıkları altında buz üzerinde duran taze yakalanmış balık"
+                width="589"
+                height="420"
+              />
+            </div>
+          </article>
+          <article class="traditions__card" id="nordic-traditions">
+            <div class="traditions__media">
+              <img
+                class="traditions__image"
+                src="images/traditions/card-2.webp"
+                alt="Donmuş gölde açılan buz deliği ve arkada kuzey ışıkları altında balıkçı silüeti"
+                width="589"
+                height="420"
+              />
+            </div>
+            <div class="traditions__content">
+              <h2 class="traditions__content-title">
+                Norveç Fiyortlarından Finlandiya Göllerine
+              </h2>
+              <p class="traditions__content-text">
+                İskandinav ülkeleri, geniş göl ve fiyort ağlarının şekillendirdiği uzun geçmişe sahip buzda balıkçılık kültürlerine sahiptir. Finlandiya'da buzda balıkçılık (pilkkiminen), levrek ve turna gibi türler için kullanılan jig teknikleriyle yaygın bir kış aktivitesi olmaya devam etmektedir. Norveç'in kıyı toplulukları ise tarih boyunca fiyortlarda yapılan kış balıkçılığını iç bölgelerdeki göl buz balıkçılığıyla birleştirerek her ortamın özel koşullarına uygun yöntemler geliştirmiştir.
+              </p>
+            </div>
+          </article>
+          <article class="traditions__card">
+            <div class="traditions__content">
+              <h2 class="traditions__content-title">
+                Nesiller Boyunca Geliştirilen Teknikler
+              </h2>
+              <p class="traditions__content-text">
+                Çeşitli Sámi ve Inuit toplulukları da dahil olmak üzere Arktik yerli halkları, zorlu soğuk koşullara uygun gelişmiş balıkçılık yöntemleri geliştirmiştir. Bunlar arasında özel buz deliğiyle zıpkın avcılığı teknikleri ve donmuş sular altındaki balık davranışları hakkında ayrıntılı bilgi bulunur. Bu uygulamalar genellikle mevsimsel yaşam döngüsüyle yakından bağlantılıydı; balıkçılık zamanları, uzun Arktik kışı boyunca ve gün ışığının geri dönüşü sırasında balık hareketlerinin nasıl değiştiğine göre belirlenirdi.
+              </p>
+            </div>
+            <div class="traditions__media">
+              <img
+                class="traditions__image"
+                src="images/traditions/card-3.webp"
+                alt="Geleneksel buz balıkçılığı teknikleri, yemleri ve av sahneleri kolajı"
+                width="589"
+                height="420"
+              />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="techniques section-padding-y" id="techniques">
+      <div class="techniques__container container">
+        <div class="techniques__wrapper">
+          <article class="techniques__card">
+            <h2 class="techniques__card-title">
+              Soğuğa Uyum Sağlayan Ekipmanlar
+            </h2>
+            <p class="techniques__card-text">
+              Kuzey balıkçılık gelenekleri, çevresel koşullara uygun özel araçların gelişmesini sağlamıştır. Buz burguları, basit el keskilerinden spiral el matkaplarına ve daha sonra motorlu sistemlere dönüşmüştür. Basit rüzgar koruyucularından tamamen kapalı kulübelere kadar uzanan geleneksel buz balıkçılığı barınakları, balıkçıların zorlu sıcaklıklarda uzun süre avlanmasına olanak sağlamıştır. Açık suda kullanılan ekipmanlardan farklı olarak dar buz deliklerinde balık tutmaya uygun kısa jig oltaları, birçok kuzey kültüründe buz balıkçılığı ekipmanlarının önemli bir parçası haline gelmiştir.
+            </p>
+          </article>
+          <article class="techniques__card">
+            <h2 class="techniques__card-title">
+              Nesilden Nesile Aktarılan Soğuk Hava Bilgisi
+            </h2>
+            <p class="techniques__card-text">
+              Başarılı bir kış balıkçılığı, buz kalınlığı, sudaki oksijen seviyeleri ve balık davranışlarının mevsim boyunca nasıl değiştiği hakkında detaylı bilgi gerektirirdi. Birçok kuzey balıkçılık topluluğu aynı zamanda gökyüzünü gözlemleme yöntemleri geliştirmiştir. Kuzey ışıkları, ayın evreleri ve hava koşulları, uygun balıkçılık zamanlarını belirlemek için kullanılan geleneksel göstergeler arasında yer almıştır. Bu yöntemler, pratik gözlem ile nesiller boyunca aktarılan folklorik bilgileri birleştirir.
+            </p>
+          </article>
+        </div>
+        <div class="techniques__banner">
+          <img
+            class="techniques__image"
+            src="images/techniques/techniques-banner.webp"
+            alt="Kuzey ışıkları altında çadır ve buzda balık tutan insanlar"
+            width="1280"
+            height="420"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="faq section-padding-y" id="faq">
+      <div class="faq__container container">
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__item-question">
+              İnsanlar açık suyu beklemek yerine neden buz üzerinden balık tutar?
+            </summary>
+            <div class="faq__answer">
+              <p class="faq__answer-text">
+                Kuzey bölgelerinde göller ve nehirler yılın büyük bölümünde donmuş kalabilir. Bu nedenle buzda balıkçılık, güvenilir bir besin kaynağını korumak ve balıkçılık kültürünü yıl boyunca sürdürmek için geliştirilmiştir.
+              </p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__item-question">
+              Aurora ile balık hareketleri arasında gerçek bir bağlantı var mı?
+            </summary>
+            <div class="faq__answer">
+              <p class="faq__answer-text">
+                Bağlantı büyük ölçüde kültürel ve gözlemseldir; kanıtlanmış biyolojik bir ilişkiye değil, folklora ve kuzey ışıklarının görüldüğü dönemlerde yapılan gece balıkçılığı geleneğine dayanır.
+              </p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__item-question">
+              Pilkkiminen nedir?
+            </summary>
+            <div class="faq__answer">
+              <p class="faq__answer-text">
+                Pilkkiminen, Finlandiya'da yaygın olarak uygulanan buz deliğinden jig yöntemiyle balık tutma geleneğinin Fince adıdır.
+              </p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__item-question">
+              Arktik yerli toplulukları aşırı soğuğa nasıl uyum sağladı?
+            </summary>
+            <div class="faq__answer">
+              <p class="faq__answer-text">
+                Buz deliğinden zıpkınla avlanma gibi özel teknikler ve balık davranışlarına dair ayrıntılı mevsimsel bilgiler sayesinde, bu yöntemler birçok nesil boyunca geliştirilmiş ve korunmuştur.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__wrapper">
+        <ul class="footer__list">
+        </ul>
+        <div class="footer__info">
+          <p class="footer__info-copyright">
+            © 2026 auroracraft.site —
+          </p>
+          <a 
+            href="mailto:support@auroracraft.site" class="footer__info-email"
+          >
+            support@auroracraft.site
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="modal-register" aria-hidden="true" role="dialog">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__window">
+      <div class="modal__header">
+        <h2 class="modal__title">HESAP OLUŞTUR</h2>
+        <button class="modal__close" type="button" aria-label="Kapat" data-modal-close></button>
+      </div>
+      <form class="modal__form form" autocomplete="off">
+        <div class="form__group">
+          <label class="form__label" for="reg-name">Kullanıcı Adı</label>
+          <input class="form__input" type="text" id="reg-name" placeholder="Kullanıcı adınızı girin" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="reg-email">E-posta Adresi</label>
+          <input class="form__input" type="email" id="reg-email" placeholder="E-posta adresinizi girin" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="reg-password">Şifre</label>
+          <input class="form__input" type="password" id="reg-password" placeholder="Şifrenizi oluşturun" required />
+        </div>
+        <label class="form__checkbox-label">
+          <input class="form__checkbox" type="checkbox" required />
+          <span class="form__checkbox-custom"></span>
+          <span class="form__checkbox-text">
+            Kullanım Koşullarını ve Gizlilik Politikasını kabul ediyorum
+          </span>
+        </label>
+        <button class="modal__submit" type="submit">KAYIT OL</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="modal-login" aria-hidden="true" role="dialog">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__window">
+      <div class="modal__header">
+        <h2 class="modal__title">HESABINIZA GİRİŞ YAPIN</h2>
+        <button class="modal__close" type="button" aria-label="Kapat" data-modal-close></button>
+      </div>
+      <form class="modal__form form" autocomplete="off">
+        <div class="form__group">
+          <label class="form__label" for="login-email">E-posta Adresi</label>
+          <input class="form__input" type="email" id="login-email" placeholder="E-posta adresinizi girin" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="login-password">Şifre</label>
+          <input class="form__input" type="password" id="login-password" placeholder="Şifrenizi girin" required />
+        </div>
+        <button class="modal__submit" type="submit">GİRİŞ YAP</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="modal-success" aria-hidden="true" role="dialog">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__window">
+      <div class="modal__header">
+        <h2 class="modal__title">HOŞ GELDİNİZ!</h2>
+        <button class="modal__close" type="button" aria-label="Kapat" data-modal-close></button>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          Kaydınız başarıyla oluşturuldu. AuroraCraft ile kuzey balıkçılık geleneklerini, buz üzerindeki maceraları ve
+          kuzey ışıkları altındaki hikayeleri keşfetmeye başlayın.
+        </p>
+        <button class="modal__submit" type="button" data-modal-close>ANA SAYFAYA GİT</button>
+      </div>
+    </div>
+  </div>
+  <div class="cookies" id="cookies-banner" aria-hidden="true">
+    <div class="cookies__container">
+      <p class="cookies__text">
+        Tarama deneyiminizi geliştirmek, kişiselleştirilmiş reklamlar veya içerikler sunmak ve trafiğimizi analiz etmek
+        için çerezleri kullanıyoruz. "Tümünü Kabul Et" seçeneğine tıklayarak çerez kullanımımızı kabul etmiş olursunuz.
+        Daha fazla bilgi için Çerez Bildirimimizi inceleyebilirsiniz.
+      </p>
+      <div class="cookies__actions">
+        <button class="cookies__btn cookies__btn--accept" type="button" data-cookie-action="accept">
+          Tümünü Kabul Et
+        </button>
+        <a class="cookies__btn cookies__btn--reject" href="#" data-cookie-action="reject">
+          Reddet
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

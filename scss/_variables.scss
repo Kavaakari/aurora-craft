@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+$container-width: 1280;
+$container-padding-max: 80;
+$container-padding-min: 16;
+
+:root {
+  --font-primary: 'Mukta', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+
+  --color-dark: #1A2332;
+  --color-steel-blue: #3D5A80;
+  --color-light: #F8F9FA;
+  --color-gray: #ECEFF3;
+  --color-gray-light: #f1f3f6;
+
+  --container-padding-x: #{fluid($container-padding-min, $container-padding-max)};
+
+  --section-padding-y: #{fluid(60,100)};
+
+  --border-radius-sm: #{rem(12)};
+  --border-radius-md: #{rem(22)};
+
+  --header-height: #{rem(43)};
+
+  @include laptop-up {
+    --header-height: #{rem(93)};
+  }
+}

@@ -1,0 +1,26 @@
+@use 'helpers' as *;
+
+html {
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+}
+
+h1 {
+  font-size: fluid(38, 42);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: fluid(30, 38);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--font-secondary);
+}

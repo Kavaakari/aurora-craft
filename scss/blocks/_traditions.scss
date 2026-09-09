@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.traditions {
+
+  background-color: var(--color-gray-light);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid(100, 80);
+  }
+  
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: rem(22);
+    padding: fluid(32, 48) fluid(10, 40);
+
+    background-color: var(--color-light);
+
+    @include laptop-up {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(42);
+
+    @include laptop-up {
+      flex: 1 1 0;
+    }
+  }
+
+  &__media {
+    width: 100%;
+
+    @include laptop-up {
+      flex: 1 1 0;
+    }
+  }
+
+  &__image {
+    border-radius: var(--border-radius-md);
+  }
+}

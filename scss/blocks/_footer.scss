@@ -1,0 +1,46 @@
+@use '../helpers' as *;
+
+.footer {
+  font-family: var(--font-secondary);
+  background-color: var(--color-light);
+  font-size: rem(13);
+  letter-spacing: 0.02em;
+  color: #5a7a99;
+
+  &__container {
+    border-top: rem(1) solid #5a7a99;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(8);
+    padding: rem(32) 0 rem(16);
+  }
+
+  &__list {
+    display: flex;
+    column-gap: rem(32);
+  }
+
+  &__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: rem(6);
+  }
+
+  &__item-link,
+  &__info-email {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease, text-decoration 0.2s ease;
+
+    @include hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+  }
+}
